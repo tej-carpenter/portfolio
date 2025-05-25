@@ -1,0 +1,32 @@
+{
+    "certificates": [
+        {
+            "title": "Introduction to Databases | Coursera Meta",
+            "image": "Introduction_to_Databases-Coursera-Meta.png"
+        },
+        {
+            "title": "Introduction to Machine Learning | Kaggle",
+            "image": "Introduction_to_machine_learning-kaggle.png"
+        },
+        {
+            "title": "Pandas | Kaggle",
+            "image": "Pandas-kaggle.png"
+        },
+        {
+            "title": "Project Management | Coursera Google",
+            "image": "project_management-Coursera-Google.png"
+        },
+        {
+            "title": "Python Basics | Coursera University of Michigan",
+            "image": "Python_Basics-Coursera-University_of_Michigan.png"
+        },
+        {
+            "title": "Python Basics | Hackerrank",
+            "image": "python_basics-hackerrank.png"
+        },
+        {
+            "title": "Python | Kaggle",
+            "image": "Python-kaggle.png"
+        }
+    ]
+}

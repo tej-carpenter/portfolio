@@ -19,42 +19,21 @@
                 <!-- Certificates will be loaded dynamically -->
             </div>
         </div>
-    <script src="js/script.js"></script>
-    <script>
+    <script src="js/script.js"></script>    <script>
         async function loadCertificates() {
             try {
-                const response = await fetch('assests/certificates/');
-                const text = await response.text();
-                const parser = new DOMParser();
-                const doc = parser.parseFromString(text, 'text/html');
-                const links = Array.from(doc.getElementsByTagName('a'));
-                
-                // Filter only PNG files and sort them
-                const pngFiles = links
-                    .map(link => link.href)
-                    .filter(href => href.toLowerCase().endsWith('.png'))
-                    .sort(); // Sort alphabetically
-                
+                const response = await fetch('data/certificates.json');
+                const data = await response.json();
                 const container = document.getElementById('certificates-container');
                 
-                pngFiles.forEach(file => {
-                    const fileName = file.split('/').pop();
-                    // Convert filename to title (remove extension and replace - with spaces)
-                    const title = fileName
-                        .replace(/\.png$/i, '')
-                        .replace(/-/g, ' | ')
-                        .replace(/_/g, ' ')
-                        .split(' ')
-                        .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
-                        .join(' ');
-
+                data.certificates.forEach(cert => {
                     const card = document.createElement('div');
                     card.className = 'certificate-card';
                     card.innerHTML = `
                         <div class="upper-certificate-card">
-                            <img src="assests/certificates/${fileName}" alt="${title}" class="certificate-img">
+                            <img src="assests/certificates/${cert.image}" alt="${cert.title}" class="certificate-img">
                         </div>
-                        <div class="lower-certificate-card">${title}</div>
+                        <div class="lower-certificate-card">${cert.title}</div>
                     `;
                     
                     container.appendChild(card);
