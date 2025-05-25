@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Tej Prakash Carpenter</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <div class="cursor"></div>
+
+    <nav id="nav">
+        <a href="index.html" id="profile-btn"><button class="nav-btn box-btn">About</button></a>
+        <a href="" id="empty-nav-box"></a>
+        <a href="projects.html" id="project-btn"><button class="nav-btn box-btn">Projects</button></a>
+        <a href="certificates.html" id="certificate-btn"><button class="nav-btn box-btn">Certificates</button></a>
+        <a href="contact.html" id="project-btn"><button class="nav-btn box-btn">Contact</button></a>
+        <a target="_blank" href="docs/resume.pdf" id="resume-btn"><button class="nav-btn box-btn">Resume</button></a>
+    </nav>    <div class="main" id="main">
+        <div class="main-container" id="projects-container">
+            <!-- Projects will be loaded dynamically -->
+        </div>
+    </div>
+    <script>
+        async function loadProjects() {
+            try {
+                const response = await fetch('data/projects.json');
+                const data = await response.json();
+                const projectsContainer = document.getElementById('projects-container');
+                
+                data.projects.forEach(project => {
+                    const card = document.createElement('div');
+                    card.className = 'project-card';
+                    
+                    const technologies = project.technologies.join(' • ');
+                    
+                    card.innerHTML = `
+                        <div class="upper-project-card">
+                            <img src="${project.image}" alt="${project.title}" class="project-card-img">
+                        </div>
+                        <div class="lower-project-card">
+                            <h3>${project.title}</h3>
+                            <p class="project-description">${project.description}</p>
+                            <p class="project-tech">${technologies}</p>
+                            ${project.githubUrl ? `<a href="${project.githubUrl}" target="_blank" class="project-link">View on GitHub</a>` : ''}
+                        </div>
+                    `;
+                    
+                    projectsContainer.appendChild(card);
+                });
+            } catch (error) {
+                console.error('Error loading projects:', error);
+            }
+        }
+
+        // Load projects when the page loads
+        window.addEventListener('load', loadProjects);
+    </script>
+
+<script src="js/script.js"></script>
+    </body>
+
+</html>

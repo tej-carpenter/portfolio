@@ -1,0 +1,492 @@
+@keyframes popUpOnStart {
+    from {
+        transform: scale(0%);
+    }
+
+    to {
+        transform: scale(100%);
+    }
+}
+
+@keyframes techy {
+    0% {
+        width: 0vh;
+        height: 0vh;
+        border-radius: 0px;
+    }
+
+    60% {
+        height: 0vh;
+        width: 80vh;
+        border-radius: 7px;
+    }
+
+    100% {
+        /* width: 80vh; */
+    }
+}
+
+@keyframes shootShadow {
+    0% {
+        box-shadow: 20px 0px 100px #117374;
+    }
+
+    50% {
+        box-shadow: 500px 0px 100px #117374;
+    }
+
+    100% {
+        box-shadow: 5000px 0px 100px #117374;
+    }
+}
+
+@keyframes borderRotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    /* 50%{
+        transform: scale(103%);
+    } */
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-family: sans-serif;
+    transition: all 0.3s;
+}
+
+body {
+    background: url("../assests/images/wlppr6221846.jpg") no-repeat fixed top;
+    /* Adjusted path */
+    background-size: cover;
+}
+
+nav {
+    height: 70px;
+    background: linear-gradient(#117374, transparent);
+    display: flex;
+    justify-content: right;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    text-align: right;
+    position: static;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+button {
+    background: inherit;
+    border: none;
+}
+
+.nav-btn {
+    padding: 0 15px 0 15px;
+}
+
+#empty-nav-box {
+    width: 600px;
+    height: 100%;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+
+.main {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+
+.main-container {
+    border-radius: 20px;
+    width: 80vh;
+    height: 75vh;
+    border: 1px solid #117274;
+    box-shadow: 0px 0px 20px #117374;
+    overflow: scroll;
+    scrollbar-width: none;
+    padding: 20px;
+    backdrop-filter: blur(10px);
+    /* align-items: center; */
+    /* text-align: center; */
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* animation: popUpOnStart .5s; */
+    animation: techy 1s;
+
+}
+
+
+.btn {
+    background: #1172746e;
+    padding: 10px 15px;
+    border-radius: 7px;
+    border: 2px solid #117274;
+}
+
+.btn:active {
+    transform: scale(95%);
+}
+
+
+/* upload-form */
+fieldset {
+    border-radius: 10px;
+    border: 2px solid #117274;
+    color: #043132;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+input,
+select {
+    outline: none;
+    border: transparent;
+    background-color: transparent;
+    width: 100%;
+}
+
+select {
+    background-color: transparent;
+}
+
+/* profile */
+.profiles {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, minmax(300px, 1fr));
+}
+
+.profile-card,
+.message {
+    width: 100%;
+    height: 50px;
+    border-radius: 7px;
+    background-color: #1172746e;
+    margin: 10px 0px 10px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    /* transition: all 0.2s; */
+}
+
+.profile-card:hover {
+    /* border: 2px solid #117274; */
+    box-shadow: 0px 0px 20px #117374;
+    /* animation: shootShadow 1s; */
+    /* box-shadow:0px 0px 100px #117374; */
+}
+
+.profile-card-key {
+    display: block;
+    font-size: 23px;
+    text-align: left;
+    /* padding:10px 5px; */
+    width: fit-content;
+}
+
+.profile-card-value,
+.about {
+    width: fit-content;
+    display: block;
+}
+
+.icon-img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    /* background-color: #1172746e; */
+    /* padding: 5px; */
+}
+
+.icon-img:hover {
+    /* box-shadow: 0px 0px 20px #117374; */
+    animation: borderRotate 0.5s;
+}
+
+/* about */
+.about {
+    width: 100%;
+    padding: 20px 0px 20px 0px;
+    height: 100vh;
+    /* border: 1px solid black; */
+}
+
+.about p {
+    padding: 100px 0px 0px 10px;
+    /* color:red; */
+}
+
+section p{
+    margin-left: 40px;
+}
+
+/* profile */
+.project-card,
+.certificate-card {
+    width: 35vh;
+    background: #1172746e;
+    padding: 10px;
+    margin: 0.5vw;
+    text-align: left;
+    border: 2px solid #117274;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+}
+
+.lower-project-card h3 {
+    margin-bottom: 8px;
+    color: #117374;
+}
+
+.project-description {
+    font-size: 0.9em;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+
+.project-tech {
+    font-size: 0.8em;
+    color: #117374;
+    margin-bottom: 12px;
+}
+
+.project-link {
+    display: inline-block;
+    padding: 5px 10px;
+    background: #117374;
+    color: white;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 0.9em;
+    transition: background-color 0.3s;
+}
+
+.project-link:hover {
+    background: #0a5152;
+}
+
+.upper-project-card,
+.upper-certificate-card {
+    height: 20vh;
+    font-size: 12vh;
+}
+
+.lower-project-card,
+.lower-certificate-card {
+    min-height: 5vh;
+    margin: 10px;
+    padding: 5px;
+    height: auto;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+.upper-certificate-card {
+    height: auto;
+}
+
+.lower-certificate-card {
+    text-align: center;
+    font-size: 0.9em;
+    line-height: 1.2;
+}
+
+.project-card-img {
+    border: 3px solid #117274;
+    border-radius: 7px;
+    height: 100%;
+    width: 100%;
+}
+
+.certificate-img {
+    border: 3px solid #117274;
+    border-radius: 7px;
+    height: 100%;
+    width: 100%;
+}
+
+/* .contact-information li{
+    transition: 0.3s;
+} */
+.contact-information li {
+    padding: 5px 0px 20px 0px;
+    /* transition: 0.3s; */
+}
+
+.contact-information li:hover {
+    border-left: 10px solid #117374;
+}
+
+
+.cursor {
+    width: 10px;
+    height: 10px;
+    background: #28191758;
+    border-radius: 50%;
+    /* Makes it a circle */
+    position: absolute;
+    pointer-events: none;
+    /* Allows clicks on elements beneath */
+    transform: translate(-50%, -50%);
+    transition: transform 0.1s linear, scale 0.2s ease;
+    z-index: 9999;
+    /* Ensures it's on top of everything */
+    backdrop-filter: blur(2px);
+}
+
+@media screen and (max-width: 800px) {
+    .cursor{
+        display: none;
+    }
+
+    /* Adjust font sizes for better readability on mobile */
+    * {
+        font-size: 16px;
+    }
+
+    /* Navigation adjustments */
+    nav {
+        height: auto;
+        min-height: 60px;
+        padding: 8px;
+    }
+
+    .nav-btn {
+        padding: 8px 10px;
+        font-size: 16px;
+    }
+
+    #empty-nav-box {
+        width: auto;
+        flex: 0.5;
+    }
+
+    /* Main container adjustments */
+    .main {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        margin-top: 15px;
+    }
+
+    .main-container {
+        width: 95%;
+        height: calc(100vh - 100px);
+        /* margin: 10px auto; */
+        padding: 15px;
+        animation: none;
+    }
+
+    /* Card adjustments - separate handling for projects and certificates */
+    .project-card,
+    .certificate-card {
+        width: 100%;
+        max-width: 500px;
+        flex: 1 1 100%;
+        margin:10px auto 10px auto;
+        color: #043132;
+    }
+
+    /* .project-card {
+        width: 100%;
+        max-width: 500px;
+        margin: 15px 0;
+    } */
+
+    .upper-project-card,
+    .upper-certificate-card {
+        height: auto;
+        max-height: 30vh;
+    }
+
+    .lower-project-card,
+    .lower-certificate-card {
+        min-height: auto;
+        height: auto;
+        margin: 10px 5px;
+        padding: 5px;
+    }
+
+    /* Profile card adjustments */
+    .profile-card {
+        padding: 8px 12px;
+    }
+
+    .profile-card-key {
+        font-size: 20px;
+    }
+
+    /* Certificate image adjustments */
+    .certificate-img {
+        max-height: 30vh;
+        object-fit: contain;
+    }
+
+    /* Contact information adjustments */
+    .contact-information li {
+        padding: 8px 0px 15px 0px;
+        margin-left: -25px;
+    }
+    .contact-information li:hover {
+        border-left: 5px solid #117374;
+        padding-left: 5px;
+    }
+}
+
+/* Additional breakpoint for very small screens */
+@media screen and (max-width: 380px) {
+    * {
+        font-size: 14px;
+    }
+
+    .nav-btn {
+        padding: 6px 8px;
+    }
+
+    .main-container {
+        width: 98%;
+        padding: 10px;
+    }
+
+    .profile-card-key {
+        font-size: 18px;
+    }
+}
+
+/* @media screen and (min-width: 801px) {
+    .certificate-card {
+        width: 47%;
+        flex: 0 0 47%;
+        margin: 10px 1.5%;
+    }
+
+    .project-card {
+        width: 35vh;
+        margin: 0.5vw;
+    }
+} */

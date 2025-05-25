@@ -1,0 +1,28 @@
+{
+    "projects": [
+        {
+            "title": "Trash Pickup Game",
+            "description": "A game focused on environmental awareness",
+            "image": "assests/images/trash-pickup.jpg",
+            "technologies": ["JavaScript", "Socket.io"],
+            "projectUrl": "#",
+            "githubUrl": "https://github.com/tej-carpenter/trash-pickup-game"
+        },
+        {
+            "title": "Voice Controlled Presentation Viewer",
+            "description": "Presentation control through voice commands",
+            "image": "assests/images/voice-controlled-presentation.jpg",
+            "technologies": ["Python", "Speech Recognition","Teachable Machine","Prompt Engineering"],
+            "projectUrl": "#",
+            "githubUrl": "https://github.com/tej-carpenter/voice-controlled-presentation-viewer"
+        },
+        {
+            "title": "IP Subnet Calculator",
+            "description": "Tool for calculating IP subnets",
+            "image": "assests/images/IP_subnet_calculator.jpg",
+            "technologies": ["Java", "Networking"],
+            "projectUrl": "#",
+            "githubUrl": "https://github.com/tej-carpenter/IP_SUBNET_CALCULATOR"
+        }
+    ]
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificates | Tej Prakash Carpenter</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>    <div class="cursor"></div>
+
+    <nav id="nav">
+        <a href="index.html" id="profile-btn"><button class="nav-btn box-btn">About</button></a>
+        <a href="" id="empty-nav-box"></a>
+        <a href="projects.html" id="project-btn"><button class="nav-btn box-btn">Projects</button></a>
+        <a href="certificates.html" id="certificate-btn"><button class="nav-btn box-btn">Certificates</button></a>
+        <a href="contact.html" id="project-btn"><button class="nav-btn box-btn">Contact</button></a>
+        <a target="_blank" href="docs/resume.pdf" id="resume-btn"><button class="nav-btn box-btn">Resume</button></a>
+    </nav><div class="main" id="main">
+            <div class="main-container" id="certificates-container">
+                <!-- Certificates will be loaded dynamically -->
+            </div>
+        </div>
+    <script src="js/script.js"></script>
+    <script>
+        async function loadCertificates() {
+            try {
+                const response = await fetch('assests/certificates/');
+                const text = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(text, 'text/html');
+                const links = Array.from(doc.getElementsByTagName('a'));
+                
+                // Filter only PNG files and sort them
+                const pngFiles = links
+                    .map(link => link.href)
+                    .filter(href => href.toLowerCase().endsWith('.png'))
+                    .sort(); // Sort alphabetically
+                
+                const container = document.getElementById('certificates-container');
+                
+                pngFiles.forEach(file => {
+                    const fileName = file.split('/').pop();
+                    // Convert filename to title (remove extension and replace - with spaces)
+                    const title = fileName
+                        .replace(/\.png$/i, '')
+                        .replace(/-/g, ' | ')
+                        .replace(/_/g, ' ')
+                        .split(' ')
+                        .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
+                        .join(' ');
+
+                    const card = document.createElement('div');
+                    card.className = 'certificate-card';
+                    card.innerHTML = `
+                        <div class="upper-certificate-card">
+                            <img src="assests/certificates/${fileName}" alt="${title}" class="certificate-img">
+                        </div>
+                        <div class="lower-certificate-card">${title}</div>
+                    `;
+                    
+                    container.appendChild(card);
+                });
+            } catch (error) {
+                console.error('Error loading certificates:', error);
+                document.getElementById('certificates-container').innerHTML = '<p>Error loading certificates. Please try again later.</p>';
+            }
+        }
+
+        // Load certificates when the page loads
+        window.addEventListener('load', loadCertificates);
+    </script>
+    </body>
+</html>

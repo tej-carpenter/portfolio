@@ -1,0 +1,59 @@
+*{
+    margin:0;
+    box-sizing: border-box;
+    font-family:sans-serif;
+    transition:all 0.3s;
+    font-size: 6vw;
+}
+
+body{
+    background: url("../assests/images/wlppr6221846.jpg") no-repeat fixed top; /* Adjusted path */
+    background-size: cover;
+    height: 90vh;
+}
+/* body:hover{
+    border-radius: 3vw;
+} */
+
+nav{
+    position: fixed;
+    top: 0; 
+    width: 0;
+    height: 100vh;
+    /* background: #117374; */
+    background: linear-gradient(to right,#117374,transparent);
+    overflow: hidden;
+    left: 0;
+    transition: all 0.3s ease-in-out;
+}
+#open-nav,#profile-img{
+    display: block;
+    padding: 1vh;
+    font-weight: bolder;
+    position: fixed;
+}
+.icon-img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+#profile-img{
+    left: auto;
+    right: 0;
+}
+#close-nav{
+    display: block;
+    font-size: larger;
+    text-align: right;
+}
+nav a{
+    display: block;
+    margin-top: 1vh;
+}
+nav a button{
+    background: transparent;
+    border: none;
+}
+.main{
+    height: 91vh;
+}
