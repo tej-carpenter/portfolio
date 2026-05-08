@@ -21,14 +21,19 @@
 
     <div class="main" id="main">
         <div class="main-container">
-            <section id="about-me">
-                <h2>About Me</h2>
-                <p>
-                    I'm a Computer Science student passionate about AI, software development, and solving real-world
-                    problems with code. Currently, I'm diving deeper into Python, machine learning, and full-stack web
-                    development. I'm always excited to learn and grow through projects and collaboration.
-                </p>
-            </section>
+            <div class="about-hero">
+                <section id="about-me">
+                    <h2>About Me</h2>
+                    <p>
+                        I'm a Computer Science student passionate about AI, software development, and solving real-world
+                        problems with code. Currently, I'm diving deeper into Python, machine learning, and full-stack web
+                        development. I'm always excited to learn and grow through projects and collaboration.
+                    </p>
+                </section>
+                <aside class="about-photo" aria-label="Portfolio owner photo">
+                    <img src="https://github.com/tej-carpenter.png" alt="Tej Prakash Carpenter" class="about-photo-img">
+                </aside>
+            </div>
             <section id="skills">
                 <h2>Skills</h2>
                 <ul>
@@ -38,12 +43,38 @@
                 </ul>
             </section>
             <section id="education">
-                <h2>Education</h2>
-                <p><strong>M.C.A.</strong> - NIT Trichy (2024-2027)</p>
-                <p><strong>Relevant Courses:</strong> Data Structures, Algorithms, AI, ML, Networking</p>
+                <h1>Education</h1>
+                <table class="education-table">
+                    <thead>
+                        <tr>
+                            <th>Program</th>
+                            <th>Institute</th>
+                            <th>Years</th>
+                            <th>CGPA / percentage</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>MCA</td>
+                            <td>NIT Trichy</td>
+                            <td>2024-2027</td>
+                            <td>08.00</td>
+                        </tr>
+                        <tr>
+                            <td>12th standard</td>
+                            <td>JNV Shivpuri</td>
+                            <td>2020-2021</td>
+                            <td>90.00%</td>
+                        </tr>
+                        <tr>
+                            <td>10th standard</td>
+                            <td>JNV Shivpuri</td>
+                            <td>2018-2019</td>
+                            <td>80.00%</td>
+                        </tr>
+                    </tbody>
+                </table>
             </section>
-            <blockquote>"Talk is cheap. Show me the code." - Linus Torvalds</blockquote>
-
         </div>
     </div>
     <script src="js/script.js"></script>
