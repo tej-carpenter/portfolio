@@ -137,6 +137,73 @@ a {
 
 }
 
+.about-hero {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.about-hero #about-me {
+    flex: 1 1 auto;
+    min-width: 0;
+}
+
+.about-photo {
+    flex: 0 0 auto;
+    width: 220px;
+    align-self: flex-start;
+    margin-top: 8px;
+}
+
+.about-photo-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    border-radius: 18px;
+    border: 2px solid #117274;
+    box-shadow: 0px 0px 20px #117374;
+}
+
+.about-hero {
+    margin-bottom: 24px;
+}
+
+.main-container > section {
+    margin-top: 24px;
+}
+
+.contact-container {
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.contact-content {
+    flex: 1 1 62%;
+    min-width: 300px;
+}
+
+.contact-photo {
+    flex: 0 0 32%;
+    min-width: 180px;
+    max-width: 260px;
+    margin-left: auto;
+    align-self: center;
+}
+
+.contact-photo-img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    border-radius: 18px;
+    border: 2px solid #117274;
+    box-shadow: 0px 0px 20px #117374;
+    display: block;
+}
+
 
 .btn {
     background: #1172746e;
@@ -241,6 +308,33 @@ select {
 
 section p{
     margin-left: 40px;
+}
+
+.education-table {
+    width: 100%;
+    margin-top: 15px;
+    border-collapse: collapse;
+    border: 2px solid #117274;
+    border-radius: 7px;
+    overflow: hidden;
+    background: #1172746e;
+}
+
+.education-table th,
+.education-table td {
+    border: 1px solid rgba(17, 114, 116, 0.55);
+    padding: 10px 12px;
+    text-align: left;
+    vertical-align: top;
+}
+
+.education-table th {
+    background: #117374;
+    color: #ffffff;
+}
+
+.education-table tbody tr:nth-child(even) {
+    background: rgba(17, 114, 116, 0.2);
 }
 
 /* profile */
@@ -402,6 +496,37 @@ section p{
         animation: none;
     }
 
+    .about-hero {
+        flex-direction: column;
+        gap: 15px;
+        margin-bottom: 18px;
+    }
+
+    .about-photo {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .contact-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .contact-content,
+    .contact-photo {
+        width: 100%;
+        max-width: none;
+        min-width: 0;
+    }
+
+    .contact-photo {
+        margin-left: 0;
+    }
+
+    .contact-photo-img {
+        max-height: 320px;
+    }
+
     /* Card adjustments - separate handling for projects and certificates */
     .project-card,
     .certificate-card {
@@ -439,6 +564,12 @@ section p{
 
     .profile-card-key {
         font-size: 20px;
+    }
+
+    .education-table th,
+    .education-table td {
+        padding: 8px 10px;
+        font-size: 14px;
     }
 
     /* Certificate image adjustments */
