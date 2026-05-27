@@ -62,9 +62,18 @@
     transition: all 0.3s;
 }
 
+/* Accessibility: visible focus states */
+a:focus, button:focus, input:focus {
+    outline: 3px solid #0a9a95;
+    outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * { transition: none !important; animation: none !important; }
+}
+
 body {
-    background: url("../assests/images/wlppr6221846.jpg") no-repeat fixed top;
-    /* Adjusted path */
+    background: url("https://res.cloudinary.com/dcggnrkuy/image/upload/v1779863295/wlppr6221846_tfedxy.jpg") no-repeat fixed top;
     background-size: cover;
 }
 
@@ -397,6 +406,40 @@ section p{
     height: auto;
     overflow-wrap: break-word;
     word-wrap: break-word;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+    .main-container {
+        width: 95%;
+        height: auto;
+        padding: 12px;
+    }
+
+    #empty-nav-box {
+        width: 24px;
+    }
+
+    .about-photo {
+        width: 140px;
+    }
+
+    .project-card,
+    .certificate-card {
+        width: 100%;
+    }
+
+    .nav-btn {
+        padding: 0 8px;
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 480px) {
+    * { font-size: 16px; }
+    .about p { padding: 60px 0 0 8px; }
+    nav { padding: 8px; }
+    .main { margin-top: 12px; }
 }
 
 .upper-certificate-card {

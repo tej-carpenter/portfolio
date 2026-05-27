@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Certificates | Tej Prakash Carpenter</title>
+    <meta name="description" content="Certificates and course badges for Tej Prakash Carpenter.">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>    <div class="cursor"></div>
 
-    <nav id="nav">
+    <nav id="nav" aria-label="Primary navigation">
         <a href="index.html" id="profile-btn"><button class="nav-btn box-btn">About</button></a>
         <a href="" id="empty-nav-box"></a>
         <a href="projects.html" id="project-btn"><button class="nav-btn box-btn">Projects</button></a>
@@ -19,7 +21,8 @@
                 <!-- Certificates will be loaded dynamically -->
             </div>
         </div>
-    <script src="js/script.js"></script>    <script>
+    <script src="js/script.js" defer></script>
+    <script>
         async function loadCertificates() {
             try {
                 const response = await fetch('data/certificates.json');
@@ -31,7 +34,7 @@
                     card.className = 'certificate-card';
                     card.innerHTML = `
                         <div class="upper-certificate-card">
-                            <img src="assests/certificates/${cert.image}" alt="${cert.title}" class="certificate-img">
+                            <img src="${cert.image}" alt="${cert.title}" class="certificate-img" loading="lazy">
                         </div>
                         <div class="lower-certificate-card">${cert.title}</div>
                     `;

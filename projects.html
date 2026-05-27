@@ -2,22 +2,27 @@
 <html>
 
 <head>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects | Tej Prakash Carpenter</title>
+    <meta name="description" content="Selected projects by Tej Prakash Carpenter — demos, source and links.">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <div class="cursor"></div>
 
-    <nav id="nav">
+    <header>
+    <nav id="nav" aria-label="Primary navigation">
         <a href="index.html" id="profile-btn"><button class="nav-btn box-btn">About</button></a>
         <a href="" id="empty-nav-box"></a>
         <a href="projects.html" id="project-btn"><button class="nav-btn box-btn">Projects</button></a>
         <a href="certificates.html" id="certificate-btn"><button class="nav-btn box-btn">Certificates</button></a>
         <a href="contact.html" id="project-btn"><button class="nav-btn box-btn">Contact</button></a>
         <a target="_blank" href="docs/resume.pdf" id="resume-btn"><button class="nav-btn box-btn">Resume</button></a>
-    </nav>    <div class="main" id="main">
+    </nav>
+    </header>
+    <div class="main" id="main">
         <div class="main-container" id="projects-container">
             <!-- Projects will be loaded dynamically -->
         </div>
@@ -35,15 +40,23 @@
                     
                     const technologies = project.technologies.join(' • ');
                     
+                    const links = [];
+                    if (project.projectUrl && project.projectUrl !== '#') {
+                        links.push(`<a href="${project.projectUrl}" target="_blank" rel="noopener" class="project-link">Live Demo</a>`);
+                    }
+                    if (project.githubUrl) {
+                        links.push(`<a href="${project.githubUrl}" target="_blank" rel="noopener" class="project-link">View on GitHub</a>`);
+                    }
+
                     card.innerHTML = `
                         <div class="upper-project-card">
-                            <img src="${project.image}" alt="${project.title}" class="project-card-img">
+                            <img src="${project.image}" alt="${project.title}" class="project-card-img" loading="lazy">
                         </div>
                         <div class="lower-project-card">
                             <h3>${project.title}</h3>
                             <p class="project-description">${project.description}</p>
                             <p class="project-tech">${technologies}</p>
-                            ${project.githubUrl ? `<a href="${project.githubUrl}" target="_blank" class="project-link">View on GitHub</a>` : ''}
+                            <p class="project-links">${links.join(' ')}</p>
                         </div>
                     `;
                     

@@ -2,31 +2,31 @@
     "certificates": [
         {
             "title": "Introduction to Databases | Coursera Meta",
-            "image": "Introduction_to_Databases-Coursera-Meta.png"
+            "image": "https://res.cloudinary.com/dcggnrkuy/image/upload/v1779885089/Introduction_to_Databases-Coursera-Meta_angpfq.png"
         },
         {
             "title": "Introduction to Machine Learning | Kaggle",
-            "image": "Introduction_to_machine_learning-kaggle.png"
+            "image": "https://res.cloudinary.com/dcggnrkuy/image/upload/v1779885088/Introduction_to_machine_learning-kaggle_s2bfxx.png"
         },
         {
             "title": "Pandas | Kaggle",
-            "image": "Pandas-kaggle.png"
+            "image": "https://res.cloudinary.com/dcggnrkuy/image/upload/v1779885089/Pandas-kaggle_vcumve.png"
         },
         {
             "title": "Project Management | Coursera Google",
-            "image": "project_management-Coursera-Google.png"
+            "image": "https://res.cloudinary.com/dcggnrkuy/image/upload/v1779885089/project_management-Coursera-Google_hwxtna.png"
         },
         {
             "title": "Python Basics | Coursera University of Michigan",
-            "image": "Python_Basics-Coursera-University_of_Michigan.png"
+            "image": "https://res.cloudinary.com/dcggnrkuy/image/upload/v1779885089/Python_Basics-Coursera-University_of_Michigan_hxhjcw.png"
         },
         {
             "title": "Python Basics | Hackerrank",
-            "image": "python_basics-hackerrank.png"
+            "image": "https://res.cloudinary.com/dcggnrkuy/image/upload/v1779885089/python_basics-hackerrank_e6x3sd.png"
         },
         {
             "title": "Python | Kaggle",
-            "image": "Python-kaggle.png"
+            "image": "https://res.cloudinary.com/dcggnrkuy/image/upload/v1779885090/Python-kaggle_h2pn5h.png"
         }
     ]
 }
