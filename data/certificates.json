@@ -2,23 +2,33 @@
     "certificates": [
         {
             "title": "Introduction to Databases | Coursera Meta",
-            "image": "https://res.cloudinary.com/dcggnrkuy/image/upload/v1779885089/Introduction_to_Databases-Coursera-Meta_angpfq.png"
+            "image": "https://res.cloudinary.com/dcggnrkuy/image/upload/v1779885089/Introduction_to_Databases-Coursera-Meta_angpfq.png",
+            "verification-link": "https://www.coursera.org/account/accomplishments/verify/ZX1N3H4CS1VM"
         },
         {
-            "title": "Introduction to Machine Learning | Kaggle",
-            "image": "https://res.cloudinary.com/dcggnrkuy/image/upload/v1779885088/Introduction_to_machine_learning-kaggle_s2bfxx.png"
-        },
-        {
-            "title": "Pandas | Kaggle",
-            "image": "https://res.cloudinary.com/dcggnrkuy/image/upload/v1779885089/Pandas-kaggle_vcumve.png"
+            "title": "Claude 101 | Anthropic",
+            "image": "https://res.cloudinary.com/dcggnrkuy/image/upload/v1780648888/certificate-obd8vpsck7wn-1780647682_e79iid.jpg",
+            "verification-link": "https://verify.skilljar.com/c/obd8vpsck7wn"
         },
         {
             "title": "Project Management | Coursera Google",
-            "image": "https://res.cloudinary.com/dcggnrkuy/image/upload/v1779885089/project_management-Coursera-Google_hwxtna.png"
+            "image": "https://res.cloudinary.com/dcggnrkuy/image/upload/v1779885089/project_management-Coursera-Google_hwxtna.png",
+            "verification-link": "https://www.coursera.org/account/accomplishments/verify/AB9IDYEXYW5O"
         },
         {
             "title": "Python Basics | Coursera University of Michigan",
-            "image": "https://res.cloudinary.com/dcggnrkuy/image/upload/v1779885089/Python_Basics-Coursera-University_of_Michigan_hxhjcw.png"
+            "image": "https://res.cloudinary.com/dcggnrkuy/image/upload/v1779885089/Python_Basics-Coursera-University_of_Michigan_hxhjcw.png",
+            "verification-link": "https://www.coursera.org/account/accomplishments/verify/ZX1N3H4CS1VM"
+        },
+        {
+            "title": "Introduction to Machine Learning | Kaggle",
+            "image": "https://res.cloudinary.com/dcggnrkuy/image/upload/v1779885088/Introduction_to_machine_learning-kaggle_s2bfxx.png",
+            "verification-link": "https://www.kaggle.com/learn/certification/tejprakashcarpenter/pandas"
+        },
+        {
+            "title": "Pandas | Kaggle",
+            "image": "https://res.cloudinary.com/dcggnrkuy/image/upload/v1779885089/Pandas-kaggle_vcumve.png",
+            "verification-link": "https://www.kaggle.com/learn/certification/tejprakashcarpenter/pandas"
         },
         {
             "title": "Python Basics | Hackerrank",
@@ -26,7 +36,8 @@
         },
         {
             "title": "Python | Kaggle",
-            "image": "https://res.cloudinary.com/dcggnrkuy/image/upload/v1779885090/Python-kaggle_h2pn5h.png"
+            "image": "https://res.cloudinary.com/dcggnrkuy/image/upload/v1779885090/Python-kaggle_h2pn5h.png",
+            "verification-link": "https://www.kaggle.com/learn/certification/tejprakashcarpenter/python"
         }
     ]
 }

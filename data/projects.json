@@ -25,6 +25,14 @@
             "githubUrl": "https://github.com/tej-carpenter/trash-pickup-game"
         },
         {
+            "title": "Sidekick",
+            "description": "An AI assistant for college students",
+            "image": "https://res.cloudinary.com/dcggnrkuy/image/upload/v1779863293/project_generic_image_zptdja.svg",
+            "technologies": ["RAG", "Socket.io"],
+            "projectUrl": "#",
+            "githubUrl": "https://github.com/tej-carpenter/sidekick"
+        },
+        {
             "title": "Voice Controlled Presentation Viewer",
             "description": "Presentation control through voice commands",
             "image": "https://res.cloudinary.com/dcggnrkuy/image/upload/v1779863293/project_generic_image_zptdja.svg",

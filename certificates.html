@@ -32,11 +32,15 @@
                 data.certificates.forEach(cert => {
                     const card = document.createElement('div');
                     card.className = 'certificate-card';
+                    const verifyLink = cert['verification-link'] ? `<a href="${cert['verification-link']}" target="_blank" rel="noopener" class="project-link">Verify</a>` : '';
                     card.innerHTML = `
                         <div class="upper-certificate-card">
                             <img src="${cert.image}" alt="${cert.title}" class="certificate-img" loading="lazy">
                         </div>
-                        <div class="lower-certificate-card">${cert.title}</div>
+                        <div class="lower-certificate-card">
+                            <p>${cert.title}</p>
+                            ${verifyLink}
+                        </div>
                     `;
                     
                     container.appendChild(card);
