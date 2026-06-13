@@ -63,9 +63,9 @@
 }
 
 /* Accessibility: visible focus states */
-a:focus,
-button:focus,
-input:focus {
+a:focus-visible,
+button:focus-visible,
+input:focus-visible {
     outline: 3px solid #0a9a95;
     outline-offset: 2px;
 }
@@ -78,8 +78,11 @@ input:focus {
 }
 
 body {
-    background: url("https://res.cloudinary.com/dcggnrkuy/image/upload/v1779863295/wlppr6221846_tfedxy.jpg") no-repeat fixed top;
+    background: url("https://res.cloudinary.com/dcggnrkuy/image/upload/v1779863295/wlppr6221846_tfedxy.jpg")
+        no-repeat fixed;
     background-size: cover;
+    background-position: 0% top;
+    /* color:cadetblue; */
 }
 
 nav {
@@ -94,6 +97,22 @@ nav {
     position: static;
     overflow-y: scroll;
     scrollbar-width: none;
+}
+
+.nav-active {
+    position: relative;
+}
+
+.nav-active::after {
+    content: "";
+    position: absolute;
+    left: 10%;
+    bottom: -6px;
+    width: 80%;
+    height: 3px;
+    background-color: #117374;
+    border-radius: 999px;
+    box-shadow: 0 0 8px #117374;
 }
 
 button {
@@ -119,6 +138,20 @@ a {
     color: inherit;
 }
 
+#resume-btn{
+    padding: 5px 10px;
+    width: fit-content;
+    background: #117374;
+    color: white;
+    border-radius: 400px;
+    font-size: 0.9em;
+    transition: background-color 0.3s;
+}
+#resume-btn:hover{
+    box-shadow: 0px 0px 20px #117374;
+    transition: all 0.3s;
+}
+
 
 
 
@@ -132,7 +165,7 @@ a {
 
 .main-container {
     border-radius: 20px;
-    width: 80vh;
+    width: min(600px, 90vw);
     height: 75vh;
     border: 1px solid #117274;
     box-shadow: 0px 0px 20px #117374;
@@ -320,10 +353,6 @@ select {
     /* color:red; */
 }
 
-section p {
-    margin-left: 40px;
-}
-
 .education-table {
     width: 100%;
     margin-top: 15px;
@@ -352,17 +381,48 @@ section p {
 }
 
 /* profile */
+#projects-container {
+    width: min(600px, 90%);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+.project-card {
+    width: 100%;
+    margin: 0;
+}
+
 .project-card,
 .certificate-card {
-    width: 35vh;
     background: #1172746e;
     padding: 10px;
-    margin: 0.5vw;
     text-align: left;
     border: 2px solid #117274;
     border-radius: 7px;
     display: flex;
     flex-direction: column;
+}
+
+#certificates-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.certificate-category {
+    width: 100%;
+}
+
+.certificate-category-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.certificate-card {
+    width: 100%;
+    margin: 0;
 }
 
 .lower-project-card h3 {
@@ -390,8 +450,8 @@ section p {
 .project-link {
     display: inline-block;
     padding: 5px 10px;
-    width: 70%;
-    margin: 5px 10px;
+    width: 100%;
+    margin: 5px 0px;
     background: #117374;
     color: white;
     border: none;
@@ -421,8 +481,14 @@ section p {
     word-wrap: break-word;
 }
 
+@media (max-width: 650px) {
+    .project-card {
+        flex: 1 1 100%;
+    }
+}
+
 /* Responsive adjustments */
-@media (max-width: 900px) {
+@media (max-width: 800px) {
     .main-container {
         width: 95%;
         height: auto;
@@ -437,9 +503,14 @@ section p {
         width: 140px;
     }
 
-    .project-card,
-    .certificate-card {
+    .project-card {
         width: 100%;
+    }
+
+    .certificate-category-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
     }
 
     .nav-btn {
@@ -604,6 +675,25 @@ section p {
         color: #043132;
     }
 
+    #certificates-container {
+        width: 95%;
+        max-width: 1200px;
+
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .certificate-category {
+        width: 100%;
+    }
+
+    .certificate-category-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
     /* .project-card {
         width: 100%;
         max-width: 500px;
@@ -668,7 +758,7 @@ section p {
     }
 
     .main-container {
-        width: 98%;
+        width: min(1200px, 90vw);
         padding: 10px;
     }
 

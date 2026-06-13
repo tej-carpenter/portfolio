@@ -1,59 +1,83 @@
 {
-    "certificates": [
+  "categories": {
+    "Artificial Intelligence & LLMs": {
+      "certificates": [
         {
-            "title": "Introduction to Databases | Coursera Meta",
-            "image": "https://res.cloudinary.com/dcggnrkuy/image/upload/v1779885089/Introduction_to_Databases-Coursera-Meta_angpfq.png",
-            "verification-link": "https://www.coursera.org/account/accomplishments/verify/ZX1N3H4CS1VM"
+          "title": "Claude 101 | Anthropic",
+          "image": "https://res.cloudinary.com/dcggnrkuy/image/upload/v1780648888/certificate-obd8vpsck7wn-1780647682_e79iid.jpg",
+          "verification-link": "https://verify.skilljar.com/c/obd8vpsck7wn"
         },
         {
-            "title": "Claude 101 | Anthropic",
-            "image": "https://res.cloudinary.com/dcggnrkuy/image/upload/v1780648888/certificate-obd8vpsck7wn-1780647682_e79iid.jpg",
-            "verification-link": "https://verify.skilljar.com/c/obd8vpsck7wn"
-        },
-        {
-            "title": "Claude Code 101 | Anthropic",
-            "image": "https://res.cloudinary.com/dcggnrkuy/image/upload/v1781366783/Screenshot_2026-06-13_213559_wptdf2.png",
-            "verification-link": "https://verify.skilljar.com/c/e85akys6jaba"
-        },
-        {
-            "title": "Project Management | Coursera Google",
-            "image": "https://res.cloudinary.com/dcggnrkuy/image/upload/v1779885089/project_management-Coursera-Google_hwxtna.png",
-            "verification-link": "https://www.coursera.org/account/accomplishments/verify/AB9IDYEXYW5O"
-        },
-        {
-            "title": "Python Basics | Coursera University of Michigan",
-            "image": "https://res.cloudinary.com/dcggnrkuy/image/upload/v1779885089/Python_Basics-Coursera-University_of_Michigan_hxhjcw.png",
-            "verification-link": "https://www.coursera.org/account/accomplishments/verify/ZX1N3H4CS1VM"
-        },
-        {
-            "title": "Introduction to Machine Learning | Kaggle",
-            "image": "https://res.cloudinary.com/dcggnrkuy/image/upload/v1779885088/Introduction_to_machine_learning-kaggle_s2bfxx.png",
-            "verification-link": "https://www.kaggle.com/learn/certification/tejprakashcarpenter/pandas"
-        },
-        {
-            "title": "Pandas | Kaggle",
-            "image": "https://res.cloudinary.com/dcggnrkuy/image/upload/v1779885089/Pandas-kaggle_vcumve.png",
-            "verification-link": "https://www.kaggle.com/learn/certification/tejprakashcarpenter/pandas"
-        },
-        {
-            "title": "Python (Basics) | Hackerrank",
-            "image": "https://res.cloudinary.com/dcggnrkuy/image/upload/v1779885089/python_basics-hackerrank_e6x3sd.png",
-            "verification-link": "https://www.hackerrank.com/certificates/2696661cbb80"
-        },
-        {
-            "title": "SQL (Basics) | Hackerrank",
-            "image": "https://res.cloudinary.com/dcggnrkuy/image/upload/v1781367045/Screenshot_2026-06-13_214022_qgccif.png",
-            "verification-link": "https://www.hackerrank.com/certificates/b34ea2569922"
-        },
-        {
-            "title": "CSS (Basics) | Hackerrank",
-            "image": "https://res.cloudinary.com/dcggnrkuy/image/upload/v1781366949/certificate_hackerrank_sql_xroyku.png",
-            "verification-link": "https://www.hackerrank.com/certificates/b358148236da"
-        },
-        {
-            "title": "Python | Kaggle",
-            "image": "https://res.cloudinary.com/dcggnrkuy/image/upload/v1779885090/Python-kaggle_h2pn5h.png",
-            "verification-link": "https://www.kaggle.com/learn/certification/tejprakashcarpenter/python"
+          "title": "Claude Code 101 | Anthropic",
+          "image": "https://res.cloudinary.com/dcggnrkuy/image/upload/v1781366783/Screenshot_2026-06-13_213559_wptdf2.png",
+          "verification-link": "https://verify.skilljar.com/c/e85akys6jaba"
         }
-    ]
+      ]
+    },
+    "Machine Learning & Data Science": {
+      "certificates": [
+        {
+          "title": "Introduction to Machine Learning | Kaggle",
+          "image": "https://res.cloudinary.com/dcggnrkuy/image/upload/v1779885088/Introduction_to_machine_learning-kaggle_s2bfxx.png",
+          "verification-link": "https://www.kaggle.com/learn/certification/tejprakashcarpenter/pandas"
+        },
+        {
+          "title": "Pandas | Kaggle",
+          "image": "https://res.cloudinary.com/dcggnrkuy/image/upload/v1779885089/Pandas-kaggle_vcumve.png",
+          "verification-link": "https://www.kaggle.com/learn/certification/tejprakashcarpenter/pandas"
+        }
+      ]
+    },
+    "Programming & Software Development": {
+      "certificates": [
+        {
+          "title": "Python Basics | Coursera University of Michigan",
+          "image": "https://res.cloudinary.com/dcggnrkuy/image/upload/v1779885089/Python_Basics-Coursera-University_of_Michigan_hxhjcw.png",
+          "verification-link": "https://www.coursera.org/account/accomplishments/verify/ZX1N3H4CS1VM"
+        },
+        {
+          "title": "Python (Basics) | Hackerrank",
+          "image": "https://res.cloudinary.com/dcggnrkuy/image/upload/v1779885089/python_basics-hackerrank_e6x3sd.png",
+          "verification-link": "https://www.hackerrank.com/certificates/2696661cbb80"
+        },
+        {
+          "title": "Python | Kaggle",
+          "image": "https://res.cloudinary.com/dcggnrkuy/image/upload/v1779885090/Python-kaggle_h2pn5h.png",
+          "verification-link": "https://www.kaggle.com/learn/certification/tejprakashcarpenter/python"
+        }
+      ]
+    },
+    "Databases & SQL": {
+      "certificates": [
+        {
+          "title": "Introduction to Databases | Coursera Meta",
+          "image": "https://res.cloudinary.com/dcggnrkuy/image/upload/v1779885089/Introduction_to_Databases-Coursera-Meta_angpfq.png",
+          "verification-link": "https://www.coursera.org/account/accomplishments/verify/ZX1N3H4CS1VM"
+        },
+        {
+          "title": "SQL (Basics) | Hackerrank",
+          "image": "https://res.cloudinary.com/dcggnrkuy/image/upload/v1781367045/Screenshot_2026-06-13_214022_qgccif.png",
+          "verification-link": "https://www.hackerrank.com/certificates/b34ea2569922"
+        }
+      ]
+    },
+    "Web Development": {
+      "certificates": [
+        {
+          "title": "CSS (Basics) | Hackerrank",
+          "image": "https://res.cloudinary.com/dcggnrkuy/image/upload/v1781366949/certificate_hackerrank_sql_xroyku.png",
+          "verification-link": "https://www.hackerrank.com/certificates/b358148236da"
+        }
+      ]
+    },
+    "Project Management": {
+      "certificates": [
+        {
+          "title": "Project Management | Coursera Google",
+          "image": "https://res.cloudinary.com/dcggnrkuy/image/upload/v1779885089/project_management-Coursera-Google_hwxtna.png",
+          "verification-link": "https://www.coursera.org/account/accomplishments/verify/AB9IDYEXYW5O"
+        }
+      ]
+    }
+  }
 }

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,20 +8,24 @@
     <meta name="description" content="Certificates and course badges for Tej Prakash Carpenter.">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>    <div class="cursor"></div>
+
+<body>
+    <div class="cursor"></div>
 
     <nav id="nav" aria-label="Primary navigation">
-        <a href="index.html" id="profile-btn"><button class="nav-btn box-btn">About</button></a>
+        <a href="index.html" id="profile-btn"><button class="nav-btn box-btn">Tej</button></a>
         <a href="" id="empty-nav-box"></a>
         <a href="projects.html" id="project-btn"><button class="nav-btn box-btn">Projects</button></a>
-        <a href="certificates.html" id="certificate-btn"><button class="nav-btn box-btn">Certificates</button></a>
+        <a href="certificates.html" id="certificate-btn" class="nav-active"><button
+                class="nav-btn box-btn">Certificates</button></a>
         <a href="contact.html" id="project-btn"><button class="nav-btn box-btn">Contact</button></a>
-        <a target="_blank" href="docs/resume.pdf" id="resume-btn"><button class="nav-btn box-btn">Resume</button></a>
-    </nav><div class="main" id="main">
-            <div class="main-container" id="certificates-container">
-                <!-- Certificates will be loaded dynamically -->
-            </div>
+        <a target="_blank" href="docs/resume.pdf" id="resume-btn"><button class="nav-btn box-btn" id="resume-btn">Resume</button></a>
+    </nav>
+    <div class="main" id="main">
+        <div class="main-container" id="certificates-container">
+            <!-- Certificates will be loaded dynamically -->
         </div>
+    </div>
     <script src="js/script.js" defer></script>
     <script>
         async function loadCertificates() {
@@ -28,12 +33,35 @@
                 const response = await fetch('data/certificates.json');
                 const data = await response.json();
                 const container = document.getElementById('certificates-container');
-                
-                data.certificates.forEach(cert => {
-                    const card = document.createElement('div');
-                    card.className = 'certificate-card';
-                    const verifyLink = cert['verification-link'] ? `<a href="${cert['verification-link']}" target="_blank" rel="noopener" class="project-link">Verify</a>` : '';
-                    card.innerHTML = `
+
+                Object.entries(data.categories).forEach(([categoryName, categoryData]) => {
+
+                    // Category section
+                    const categorySection = document.createElement('section');
+                    categorySection.className = 'certificate-category';
+
+                    // Category heading using existing profile-card styles
+                    const heading = document.createElement('div');
+                    heading.className = 'profile-card';
+                    heading.innerHTML = `
+                    <span class="profile-card-key">${categoryName}</span>
+                `;
+
+                    categorySection.appendChild(heading);
+
+                    // Certificates container
+                    const certificatesGrid = document.createElement('div');
+                    certificatesGrid.className = 'certificate-category-grid';
+
+                    categoryData.certificates.forEach(cert => {
+                        const card = document.createElement('div');
+                        card.className = 'certificate-card';
+
+                        const verifyLink = cert['verification-link']
+                            ? `<a href="${cert['verification-link']}" target="_blank" rel="noopener" class="project-link">Verify</a>`
+                            : '';
+
+                        card.innerHTML = `
                         <div class="upper-certificate-card">
                             <img src="${cert.image}" alt="${cert.title}" class="certificate-img" loading="lazy">
                         </div>
@@ -42,17 +70,23 @@
                             ${verifyLink}
                         </div>
                     `;
-                    
-                    container.appendChild(card);
+
+                        certificatesGrid.appendChild(card);
+                    });
+
+                    categorySection.appendChild(certificatesGrid);
+                    container.appendChild(categorySection);
                 });
+
             } catch (error) {
                 console.error('Error loading certificates:', error);
-                document.getElementById('certificates-container').innerHTML = '<p>Error loading certificates. Please try again later.</p>';
+                document.getElementById('certificates-container').innerHTML =
+                    '<p>Error loading certificates. Please try again later.</p>';
             }
         }
 
-        // Load certificates when the page loads
         window.addEventListener('load', loadCertificates);
     </script>
-    </body>
+</body>
+
 </html>
