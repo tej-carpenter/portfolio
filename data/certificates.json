@@ -11,6 +11,11 @@
             "verification-link": "https://verify.skilljar.com/c/obd8vpsck7wn"
         },
         {
+            "title": "Claude Code 101 | Anthropic",
+            "image": "https://res.cloudinary.com/dcggnrkuy/image/upload/v1781366783/Screenshot_2026-06-13_213559_wptdf2.png",
+            "verification-link": "https://verify.skilljar.com/c/e85akys6jaba"
+        },
+        {
             "title": "Project Management | Coursera Google",
             "image": "https://res.cloudinary.com/dcggnrkuy/image/upload/v1779885089/project_management-Coursera-Google_hwxtna.png",
             "verification-link": "https://www.coursera.org/account/accomplishments/verify/AB9IDYEXYW5O"
@@ -31,8 +36,19 @@
             "verification-link": "https://www.kaggle.com/learn/certification/tejprakashcarpenter/pandas"
         },
         {
-            "title": "Python Basics | Hackerrank",
-            "image": "https://res.cloudinary.com/dcggnrkuy/image/upload/v1779885089/python_basics-hackerrank_e6x3sd.png"
+            "title": "Python (Basics) | Hackerrank",
+            "image": "https://res.cloudinary.com/dcggnrkuy/image/upload/v1779885089/python_basics-hackerrank_e6x3sd.png",
+            "verification-link": "https://www.hackerrank.com/certificates/2696661cbb80"
+        },
+        {
+            "title": "SQL (Basics) | Hackerrank",
+            "image": "https://res.cloudinary.com/dcggnrkuy/image/upload/v1781367045/Screenshot_2026-06-13_214022_qgccif.png",
+            "verification-link": "https://www.hackerrank.com/certificates/b34ea2569922"
+        },
+        {
+            "title": "CSS (Basics) | Hackerrank",
+            "image": "https://res.cloudinary.com/dcggnrkuy/image/upload/v1781366949/certificate_hackerrank_sql_xroyku.png",
+            "verification-link": "https://www.hackerrank.com/certificates/b358148236da"
         },
         {
             "title": "Python | Kaggle",
