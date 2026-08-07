@@ -1,12 +1,28 @@
 {
     "projects": [
         {
+            "title": "NestMate",
+            "description": "A production-ready full-stack accommodation marketplace that enables users to discover rental properties through a scalable, responsive platform.",
+            "image": "https://res.cloudinary.com/dcggnrkuy/image/upload/v1786117683/Screenshot_2026-08-07_211721_vojdwe.png",
+            "technologies": ["Next.js 16", "TypeScript", "Tailwind CSS", "Supabase Auth", "PostgreSQL", "Cloudinary", "Razorpay", "Vercel"],
+            "projectUrl": "https://www.nestmate.site/",
+            "githubUrl": "https://github.com/tej-carpenter/nestmate"
+        },
+        {
             "title": "FoodyDipti: A Recipe Archive",
             "description": "discover simple recipes with full indgredients and step by step instructions.",
             "image": "https://res.cloudinary.com/dcggnrkuy/image/upload/v1779863294/foodydipti_frayyb.png",
             "technologies": ["Next.js 15 with the App Router","React 19","TypeScript 5.8","Tailwind CSS 4","Firebase 11","ESLint 9","Node.js"],
             "projectUrl": "https://foody-dipti.vercel.app/",
             "githubUrl": "https://github.com/tej-carpenter/foodydipti"
+        },
+        {
+            "title": "Sidekick",
+            "description": "An AI assistant for college students",
+            "image": "https://res.cloudinary.com/dcggnrkuy/image/upload/v1785151868/1784953820597_f4qnd3.jpg",
+            "technologies": ["RAG", "Socket.io"],
+            "projectUrl": "#",
+            "githubUrl": "https://github.com/tej-carpenter/sidekick"
         },
         {
             "title": "AgroTech Dashboard - Agricultural Drone Management Platform",
@@ -25,12 +41,12 @@
             "githubUrl": "https://github.com/tej-carpenter/trash-pickup-game"
         },
         {
-            "title": "Sidekick",
-            "description": "An AI assistant for college students",
-            "image": "https://res.cloudinary.com/dcggnrkuy/image/upload/v1779863293/project_generic_image_zptdja.svg",
-            "technologies": ["RAG", "Socket.io"],
+            "title": "IP Subnet Calculator",
+            "description": "Tool for calculating IP subnets",
+            "image": "https://res.cloudinary.com/dcggnrkuy/image/upload/v1779863878/Screenshot_2026-05-27_120716_pejrw5.png",
+            "technologies": ["Java", "Networking"],
             "projectUrl": "#",
-            "githubUrl": "https://github.com/tej-carpenter/sidekick"
+            "githubUrl": "https://github.com/tej-carpenter/IP_SUBNET_CALCULATOR"
         },
         {
             "title": "Voice Controlled Presentation Viewer",
@@ -39,14 +55,6 @@
             "technologies": ["Python", "Speech Recognition","Teachable Machine","Prompt Engineering"],
             "projectUrl": "#",
             "githubUrl": "https://github.com/tej-carpenter/voice-controlled-presentation-viewer"
-        },
-        {
-            "title": "IP Subnet Calculator",
-            "description": "Tool for calculating IP subnets",
-            "image": "https://res.cloudinary.com/dcggnrkuy/image/upload/v1779863878/Screenshot_2026-05-27_120716_pejrw5.png",
-            "technologies": ["Java", "Networking"],
-            "projectUrl": "#",
-            "githubUrl": "https://github.com/tej-carpenter/IP_SUBNET_CALCULATOR"
         }
     ]
 }
