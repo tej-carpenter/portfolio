@@ -31,6 +31,22 @@
 
 The projects below are pulled from `data/projects.json`.
 
+### NestMate.site
+![NestMate](https://res.cloudinary.com/dcggnrkuy/image/upload/v1786117683/Screenshot_2026-08-07_211721_vojdwe.png)
+A production-ready full-stack accommodation marketplace that enables users to discover rental properties through a scalable, responsive platform.
+
+**Technologies:** Next.js 16 • TypeScript • Tailwind CSS • Supabase Auth • PostgreSQL • Cloudinary • Razorpay • Vercel
+
+**Links:** [Live Demo](https://www.nestmate.site/) • [GitHub](https://github.com/tej-carpenter/nestmate)
+
+### SideKick
+![SideKick](https://res.cloudinary.com/dcggnrkuy/image/upload/v1785151868/1784953820597_f4qnd3.jpg)
+Sidekick is an AI-powered academic advisor and productivity platform that delivers personalized guidance based on a student's department, semester, CGPA, interests, and career goals. Unlike generic AI chatbots, it maintains persistent user context to provide tailored recommendations for coursework, study planning, internships, interview preparation, and academic decision-making. Built with a modern full-stack architecture, the platform integrates LLM-powered conversations, secure authentication, and personalized data management to deliver a scalable, context-aware student experience.
+
+FastAPI • RAG • React.js • Supabase (PostgreSQL) • Gemini API • Vercel
+
+**Links:** [GitHub](https://github.com/tej-carpenter/sidekick)
+
 ### FoodyDipti: A Recipe Archive
 
 ![FoodyDipti](https://res.cloudinary.com/dcggnrkuy/image/upload/v1779863294/foodydipti_frayyb.png)
@@ -87,7 +103,17 @@ Tool for calculating IP subnets
 
 ## Certificates
 
-The certificates below are pulled from `data/certificates.json`.
+![Claude 101](https://res.cloudinary.com/dcggnrkuy/image/upload/v1780648888/certificate-obd8vpsck7wn-1780647682_e79iid.jpg)
+
+Claude 101 | Anthropic
+
+---
+
+![Claude Code 101](https://res.cloudinary.com/dcggnrkuy/image/upload/v1781366783/Screenshot_2026-06-13_213559_wptdf2.png)
+
+Claude Code 101 | Anthropic
+
+---
 
 ![Introduction to Databases](https://res.cloudinary.com/dcggnrkuy/image/upload/v1779885089/Introduction_to_Databases-Coursera-Meta_angpfq.png)
 

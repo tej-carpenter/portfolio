@@ -20,7 +20,7 @@
             "title": "Sidekick",
             "description": "An AI assistant for college students",
             "image": "https://res.cloudinary.com/dcggnrkuy/image/upload/v1785151868/1784953820597_f4qnd3.jpg",
-            "technologies": ["RAG", "Socket.io"],
+            "technologies": ["RAG", "FastAPI", "RAG", "React.js", "Supabase (PostgreSQL)", "Gemini API", "Vercel"],
             "projectUrl": "#",
             "githubUrl": "https://github.com/tej-carpenter/sidekick"
         },
